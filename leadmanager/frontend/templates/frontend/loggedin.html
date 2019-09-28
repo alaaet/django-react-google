@@ -1,0 +1,22 @@
+<!doctype html>
+{% load socialaccount %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>You are logged in... </title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+{% if user.is_authenticated %}
+<p>Welcome {{ user.username }} !!!</p>
+{% else %}
+<a href="{% provider_login_url 'google' %}">Sign Up</a>
+{% endif %}
+
+<a href="/">Home</a>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

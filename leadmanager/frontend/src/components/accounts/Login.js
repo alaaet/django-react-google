@@ -59,6 +59,9 @@ export class Login extends Component {
             <p>
               Don't have an account? <Link to="/register">Register</Link>
             </p>
+            <a href="/accounts/google/login/" class="btn btn-danger btn-block">
+              <i class="fa fa-google"></i> Sign in with <b>Google</b>
+            </a>
           </form>
         </div>
       </div>
