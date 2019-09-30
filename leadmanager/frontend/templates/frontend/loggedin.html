@@ -1,5 +1,6 @@
 <!doctype html>
 {% load socialaccount %}
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -18,5 +19,12 @@
 
 <a href="/">Home</a>
   <script src="js/scripts.js"></script>
+      <script
+      src="{% static 'frontend/loggedin.js' %}"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript"> 
+   var user = "{{user}}";
+</script>
 </body>
 </html>
