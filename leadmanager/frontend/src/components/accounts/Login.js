@@ -61,15 +61,16 @@ export class Login extends Component {
             </p>
             <a
               href="/accounts/google/login/"
-              class="btn btn-block btn-social btn-google"
+              className="btn btn-block btn-social btn-google"
             >
-              <span class="fa fa-google"></span> Sign in with <b>Google</b>
+              <span className="fa fa-google"></span> Sign in with <b>Google</b>
             </a>
             <a
               href="/accounts/facebook/login/"
-              class="btn btn-block btn-social btn-facebook"
+              className="btn btn-block btn-social btn-facebook"
             >
-              <span class="fa fa-facebook"></span> Sign in with <b>Facebook</b>
+              <span className="fa fa-facebook"></span> Sign in with{" "}
+              <b>Facebook</b>
             </a>
           </form>
         </div>
